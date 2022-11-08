@@ -1,0 +1,58 @@
+footer
+{
+    width: 100%;
+    background-color: #171b20;
+}
+
+.fcontent
+{
+    display: flex;
+    justify-content: space-around;
+}
+.logo_bottom
+{
+    padding: 20px;
+    margin-left: 10px;
+    font-size: larger;
+}
+.fHeads
+{
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.flist ul li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 200;
+    color: #272a2e;
+    cursor: pointer;
+}
+.flist ul li:hover
+{
+    color: white;
+    padding: 9px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.media_head
+{
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+.media
+{
+    display: flex;
+    justify-content: center;
+
+}
+.media img
+{
+    margin: 20px;
+}
+

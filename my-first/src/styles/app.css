@@ -1,0 +1,69 @@
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background-color: rgb(95, 225, 235);
+    font-family: 'Comfortaa', cursive;
+}
+
+.Calc
+{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    justify-content: center;
+}
+
+.Calc > button
+{
+    cursor: pointer;
+    font-size: larger;
+    border: 1px solid rgb(56, 51, 51);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.Calc > button:hover,
+.Calc > button:focus
+{
+    background-color: rgba(255, 255, 255, .9);
+    font-weight: 700;
+    transition: .5s;
+}
+.span
+{
+    grid-column: span 2;
+}
+
+.output
+{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-op
+{
+    color: rgba(255, 255, 255, .70);
+    font-size: larger;
+    text-align: right;
+}
+
+.current-op
+{
+    color: beige;
+    font-size: x-large;
+    text-align: right;
+}
